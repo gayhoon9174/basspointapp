@@ -40,5 +40,14 @@
 
 </form>
 
+<div class="intro_wrap">
+    <div class="intro_min">
+        <div class="intro_logo">
+            <img class="logo_head" src="${pageContext.request.contextPath }/images/intro/logo_head.png">
+            <img class="logo_tail" src="${pageContext.request.contextPath }/images/intro/logo_tail.png">
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
