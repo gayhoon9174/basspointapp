@@ -13,7 +13,7 @@ import java.util.Map;
 @Controller
 public class HelloController {
 
-    @RequestMapping("/hello")
+    @RequestMapping("/intro")
     public String hello(ModelMap modelMap, @RequestParam Map<String, Object> paramMap) {
         //화면에서 넘어오는 데이타는 paramMap에 담김
         String test = (String) paramMap.get("test");
@@ -21,13 +21,9 @@ public class HelloController {
 
         //서버에서 보내는 데이터는 modelMap에 넣음
         modelMap.addAttribute("A", test);
-    
+
         //이동할 페이지
-        return "intro/hello";
+        return "intro/intro";
     }
-
-
-
-
 
 }
