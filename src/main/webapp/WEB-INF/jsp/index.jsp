@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2020-07-14
-  Time: 오후 12:40
+  User: ahn
+  Date: 2020-07-15
+  Time: 오후 12:48
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -18,27 +18,10 @@
     <meta property="og:description" content="전국배스낚시정보" />
     <meta property="og:url" content="http://createdream.co.kr" />
     <title>배스포인트</title>
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/common.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/layout.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/intro.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/font.css">
+    <meta http-equiv="refresh" content="0; URL=${pageContext.request.contextPath }/intro">
     <script type="text/JavaScript" src="${pageContext.request.contextPath }/js/jquery-3.4.1.min.js"></script>
 </head>
-<script>
-    var test = "${A}";
- $(document).ready(function () {
-     alert(test);
- });
-
-
-</script>
 <body>
-<form id="target" action="/basspoint/hello" method="post">
-    <input type="text" name="test" value="Hello there" />
-    <input type="submit" value="Go" />
-
-
-</form>
 
 </body>
 </html>

@@ -1,0 +1,82 @@
+@charset "utf-8"; 
+
+html,body{
+  width:100%;
+  height:100%;
+}
+
+.intro_wrap{
+  width:100%;
+  height:100%;
+  background:#26ABDD;
+  display: table;
+}
+
+.intro_min{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.intro_wrap > .intro_min > .intro_logo{
+  position: relative;
+}
+
+.intro_wrap > .intro_min > .intro_logo > img.logo_head{
+  position: absolute;
+  width:20%;
+  margin-left:-18%;
+  margin-top:-20%;
+  opacity: 0;
+  transform: rotate( 90deg );
+  animation-name: logo_head;
+  animation-duration:1.5s;
+  animation-delay: 0;
+  animation-iteration-count:1;
+  animation-direction:normal;
+  animation-fill-mode:forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* 키프레임 이름 = 애니메이션 이름 */
+@-webkit-keyframes logo_head {
+  0% {
+    margin-left:-18%;
+    margin-top:-20%;
+    width:20%;
+    opacity: 0;
+    transform: rotate( 90deg );
+  }
+  100% {
+    margin-left:-15%;
+    margin-top:-15%;
+    width:30%;
+    opacity: 1;
+    transform: rotate( 0deg );
+  }
+}
+
+.intro_wrap > .intro_min > .intro_logo > img.logo_tail{
+  position: absolute;
+  width:16%;
+  margin-left:-8%;
+  margin-top:-22%;
+  opacity: 0;
+  animation-name: logo_tail;
+  animation-duration:1.5s;
+  animation-delay: 1.2s;
+  animation-iteration-count:1;
+  animation-direction:normal;
+  animation-fill-mode:forwards;
+  animation-timing-function: ease;
+}
+
+/* 키프레임 이름 = 애니메이션 이름 */
+@-webkit-keyframes logo_tail {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
