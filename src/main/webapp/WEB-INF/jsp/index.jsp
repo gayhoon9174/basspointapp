@@ -18,8 +18,7 @@
     <meta property="og:description" content="전국배스낚시정보" />
     <meta property="og:url" content="http://createdream.co.kr" />
     <title>배스포인트</title>
-    <meta http-equiv="refresh" content="0; URL=${pageContext.request.contextPath }/intro">
-    <script type="text/JavaScript" src="${pageContext.request.contextPath }/js/jquery-3.4.1.min.js"></script>
+    <meta http-equiv="refresh" content="0; URL=/intro/intro.html">
 </head>
 <body>
 

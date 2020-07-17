@@ -13,17 +13,41 @@ import java.util.Map;
 @Controller
 public class HelloController {
 
+
     @RequestMapping("/intro")
-    public String hello(ModelMap modelMap, @RequestParam Map<String, Object> paramMap) {
+    public String intro(ModelMap modelMap, @RequestParam Map<String, Object> paramMap) {
         //화면에서 넘어오는 데이타는 paramMap에 담김
         String test = (String) paramMap.get("test");
-
 
         //서버에서 보내는 데이터는 modelMap에 넣음
         modelMap.addAttribute("A", test);
 
         //이동할 페이지
         return "intro/intro";
+    }
+
+    @RequestMapping("/main")
+    public String main(ModelMap modelMap, @RequestParam Map<String, Object> paramMap) {
+        //화면에서 넘어오는 데이타는 paramMap에 담김
+        String test = (String) paramMap.get("test");
+
+        //서버에서 보내는 데이터는 modelMap에 넣음
+        modelMap.addAttribute("A", test);
+
+        //이동할 페이지
+        return "main/main";
+    }
+
+    @RequestMapping("/head")
+    public String head(ModelMap modelMap, @RequestParam Map<String, Object> paramMap) {
+        //화면에서 넘어오는 데이타는 paramMap에 담김
+        String test = (String) paramMap.get("test");
+
+        //서버에서 보내는 데이터는 modelMap에 넣음
+        modelMap.addAttribute("A", test);
+
+        //이동할 페이지
+        return "include/head";
     }
 
 }
