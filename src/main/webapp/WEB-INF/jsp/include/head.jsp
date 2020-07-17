@@ -12,4 +12,12 @@
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/layout.css">
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/intro.css">
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/font.css">
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/nice-select.css">
     <script type="text/JavaScript" src="${pageContext.request.contextPath }/js/jquery-3.4.1.min.js"></script>
+    <script type="text/JavaScript" src="${pageContext.request.contextPath }/js/jquery.nice-select.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+        });
+    </script>
